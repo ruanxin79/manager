@@ -135,7 +135,7 @@ import {
                 // mock数据
                 this.page = row;
                 this.mockTableData();
-            }
+            },
         },
         mounted() {
             this.mockTableData();
