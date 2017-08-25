@@ -35,10 +35,16 @@
         <Icon v-if="percent == 100" type="ios-checkmark-empty" size="60" style="color:#5cb85c"></Icon>
         <span v-else style="font-size:24px">{{ percent }}%</span>
         </i-circle>
+        <Currency placeholder="请输入金额" tofixed="2" v-model="curren" ></Currency> 
     </div>
 </template>
 <script>
+import Currency from './Currency.vue'
     export default {
+        name:"cur",
+        components:{
+            Currency
+        },
         data () {
             return {
                 valueText: 3,
@@ -47,8 +53,10 @@
                 show:true,
                 count:[0, 1, 2],
                 percent:10,
+                curren:'',
             }
         },
+
         methods: {
             handleAdd () {
                 if (this.count.length<5) {

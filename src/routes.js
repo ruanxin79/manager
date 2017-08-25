@@ -11,6 +11,7 @@ import Test from './pages/nav3/test.vue'
 import svg from './pages/nav3/svg.vue'
 import echarts from './pages/charts/echarts.vue'
 import Map from './pages/charts/Map.vue'
+
 let routes = [{
         path: '/login',
         component: Login,

@@ -52,7 +52,8 @@
                 ],
                 imgName: '',
                 visible: false,
-                uploadList: []
+                uploadList: [],
+                curren:""
             }
         },
         methods: {
@@ -90,10 +91,12 @@
                     });
                 }
                 return check;
-            }
+            },
+
         },
         mounted () {
             this.uploadList = this.$refs.upload.fileList;
+            
         }
     }
 </script>
