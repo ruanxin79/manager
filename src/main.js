@@ -7,10 +7,12 @@ import Vuex from 'vuex'
 import routes from './routes'
 import Mock from './mock'
 import iview from 'iview'
+import vueResource from 'vue-resource'
 import 'iview/dist/styles/iview.css'
 import VueClipboard from 'vue-clipboard2'
 Mock.bootstrap();
 
+Vue.use(vueResource)
 Vue.use(VueClipboard)
 Vue.use(VueRouter)
 Vue.use(Vuex)

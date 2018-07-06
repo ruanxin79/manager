@@ -16,7 +16,7 @@
         </Form-item>
         <Form-item label="状态" prop="status">
             <Select v-model="formValidate.status" placeholder="请选择状态">
-                <Option v-for="item in stateList" :value="item" >{{ item | selectType}}</Option>
+                <Option v-for="(item,index) in stateList" :key="index" :value="item" >{{ item | selectType}}</Option>
             </Select>
         </Form-item>
         <Form-item label="选择日期">

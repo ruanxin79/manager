@@ -1,7 +1,7 @@
 <template>
     <div>
         <Carousel autoplay v-model="value2">
-            <Carousel-item v-for="item in bannerList">
+            <Carousel-item v-for="(item,index) in bannerList" :key="index">
                 <img :src="item.url" alt="" class="demo-carousel" width="100%" :height="300">
             </Carousel-item>
         </Carousel>

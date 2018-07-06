@@ -28,7 +28,7 @@
         <Timeline-item color="blue">发布3.0版本</Timeline-item>
     </Timeline>
 
-     <Tag v-for="item in count" @on-close="handleClose2"  closable color="yellow">标签{{ item + 1 }}</Tag>
+     <Tag v-for="(item,index) in count" :key="index" @on-close="handleClose2"  closable color="yellow">标签{{ item + 1 }}</Tag>
     <Button icon="ios-plus-empty" type="dashed" size="small" @click="handleAdd" v-if="show">添加标签</Button>
 
         <i-circle :percent="percent" >
